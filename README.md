@@ -1,7 +1,7 @@
 # Android-Interview-QnA
 2021~ 안드로이드 취직 대비 면접 예상 질문들 모음집
 
-> ~~목표: 1일1업데이트(커밋)~~
+> ~~목표: 1일1커밋~~
 
 > 목표 : 1일1커밋 (2020.08.15. 재시작)
 
@@ -9,6 +9,23 @@
 
 # 2020.08.15.
 # 안드로이드 `Life-Cycle`에 대하여 설명하시오
+> goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0)
+
+사용자가 앱을 `탐색하고`, `나가고`, `다시 들어올 때` 등등의 **상태 변화**에 따라서 이를 앱에서 알아차릴 수 있게 제공하는 `Callback`.
+
+## Application
+
+## Activity
+1. `onCreate` : `Activity`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용된다.
+2. `onStart` : `Activity`가 멈췄다가 다시 시작되기 **바로 전**에 호출된다.
+3. `onResume` : `Activity`가 사용자와 상호 작용하기 **바로 전**에 호출된다.
+4. `onPause` : 다른 `Activity`가 보여질 때 호출된다.
+5. `onStop` : `Activity`가 더 이상 보여지지 않을 떄 호출된다.
+> 이는 메모리가 부족하여 종료될 시에는 호출되지 **않을** 수 있다.<br/>
+> 또한 이는 **다른 `Activity`들의 생명주기 작업이 끝나야 호출**된다.
+6. `onDestroy` : `Activity`가 소멸될 때(`finish()`) 호출된다.
+
+## Fragment
 
 ## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 생명주기 상태는 어떻게 되나요?
 
@@ -27,8 +44,7 @@
 ## `Java`는 `CbV`와 `CbR`중 어떤것인지 설명하시오
 
 # 안드로이드 4대 컴포너트에 대하여 설명하시오
-
-# `Fragment`의 `Life-Cycle`에 대해 설명하시오
+> goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#4%EB%8C%80-%EC%BB%B4%ED%8F%AC%EB%84%88%ED%8A%B8)
 
 # `Manifest`에 대해 설명하시오
 
@@ -73,6 +89,7 @@
 `Client` 부분과 `Callback` 형식들을 플러그로 설정 할 수 있다
 
 # `Context`에 대하여 설명하시오
+> goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#context)
 
 ## `Application Context`
 
