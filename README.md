@@ -94,9 +94,9 @@
 > `Fragment`의 `Parent Activity`가 아닌 다른 `Activity`가 `ForeGround`로 나오게 될 때 호출됨<br/>
 > **또한 `BackStack`으로 들어감**
 8. `onStop` : 다른 `Activity`가 화면을 완전히 가림
-9. `onDestroyView`
-10. `onDestroy`
-11. `onDetach`
+9. `onDestroyView` : `Fragment`와 관련된 `View`들이 제거될 때 호출됨
+10. `onDestroy` : `Fragment`가 소멸될 때 호출됨
+11. `onDetach` : `Fragment`가 `Activity`로 부터 해제되어질 때 
 
 ## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 `Life-Cycle` 상태는 어떻게 되나요?
 
