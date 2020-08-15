@@ -13,21 +13,41 @@
 
 사용자가 앱을 `탐색하고`, `나가고`, `다시 들어올 때` 등등의 **상태 변화**에 따라서 이를 앱에서 알아차릴 수 있게 제공하는 `Callback`.
 
-## Application
+## ~~Application~~
+> 분명 어디선가 `Application`도 생명주가가 있다고 봤는데, 찾아보니깐 정보가 없다.<br/>
+> ~~일단 보류~~
 
 ## Activity
-1. `onCreate` : `Activity`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용된다.
-2. `onStart` : `Activity`가 멈췄다가 다시 시작되기 **바로 전**에 호출된다.
-3. `onResume` : `Activity`가 사용자와 상호 작용하기 **바로 전**에 호출된다.
-4. `onPause` : 다른 `Activity`가 보여질 때 호출된다.
-5. `onStop` : `Activity`가 더 이상 보여지지 않을 떄 호출된다.
-> 이는 메모리가 부족하여 종료될 시에는 호출되지 **않을** 수 있다.<br/>
-> 또한 이는 **다른 `Activity`들의 생명주기 작업이 끝나야 호출**된다.
-6. `onDestroy` : `Activity`가 소멸될 때(`finish()`) 호출된다.
-
-## Fragment
+1. `onCreate` : `Activity`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용됨
+2. `onStart` : `Activity`가 멈췄다가 다시 시작되기 **바로 전**에 호출됨
+3. `onResume` : `Activity`가 사용자와 상호 작용하기 **바로 전**에 호출됨
+4. `onPause` : 다른 `Activity`가 보여질 때 호출됨
+5. `onStop` : `Activity`가 더 이상 보여지지 않을 떄 호출됨
+> 이는 메모리가 부족하여 종료될 시에는 호출되지 **않을** 수 있음<br/>
+> 또한 이는 **다른 `Activity`들의 생명주기 작업이 끝나야 호출**됨
+6. `onDestroy` : `Activity`가 소멸될 때(`finish()`) 호출됨
 
 ## Layout
+1. `onAttachedToWindow` : `View`가 `Window`에 연결되면 호출됨
+> `Drawing`할 표면이 알고있는 단계 -> `listener` 설정 가능
+2. `measure` 
+3. `onMeasure` : `View`의 `Size`를 확인하기 위해 호출됨
+> `ViewGroup`일 경우 계속해서 `Child View`에 대한 `Size` 측정을 하고, 그에 대한 결과로 자신의 `Size`를 결정
+4. `layout`
+5. `onLayout` : `View`의 `Size`를 측정하여 `position` 설정 후 호출됨
+6. `dispatchToDraw`
+7. `draw`
+8. `onDraw` : `View`가 그려질 준비가 되었을 때 호출됨
+> `onDraw`는 여러번 호출되므로, 여기서는 `Object`를 만들면 안됨
+
+### `requestLayout()`과 `invalidate()`의 차이점
+#### `requestLayout()`
+`measure`부터 `Layout`을 재호출
+
+#### `invalidate()`
+`dispatchToDraw()`부터 `Layout`을 재호출
+
+## Fragment
 
 ## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 생명주기 상태는 어떻게 되나요?
 
@@ -108,6 +128,8 @@
 ## Priority
 
 ## `OOM KILLER`와의 차이점
+
+# `**Big** Size Image` 처리 방법
 
 -----
 
