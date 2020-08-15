@@ -115,7 +115,18 @@
 10. `onDestroy` : `Fragment`가 소멸될 때 호출됨
 11. `onDetach` : `Fragment`가 `Activity`로 부터 해제되어질 때 
 
-# `ViewHolder` 패턴에 대하여 설명하시오
+# `ViewHolder`에 대하여 설명하시오
+ `Inflate`를 최소화 하기 위해서 `View`들의 각 요소에 바로 접근할 수 있게 저장해두고 사용하기 위한 객체
+
+## `ListView`에서의 `ViewHolder` 패턴
+> `ListView`는 `ViewHolder` 사용이 **선택임**
+1. `override fun getView(position: Int, convertView: View, parent: ViewGroup)` 에서 `convertView`가 `null` 일 때만 **최초 한 번** `inflate`하고 `ViewHolder`룰 생성해 각 요소를 `findViewById`로 연결시켜 저장하고 `convertView`에 `tag`로 저장시킴
+2. 그리고 다음부터는 `ViewHolder`를 `convertView`의 `tag`로 불러와서 재사용함
+
+## `RecyclerView`에서의 `ViewHolder`
+> `ListView`와는 달리, `RecyclerView`는 `ViewHolder`의 사용이 **필수임**
+1. `override fun createViewHolder(holder: ViewHolder, viewType: Int)`에서 새로운 `View`를 생성함과 동시에 `ViewHolder`를 만들고 리턴함
+2. `override fun onBindViewHolder(holder: ViewHolder, position: Int)`에서 `paramater`로 제공받은 `ViewHolder`의 `value`를 변경함
 
 # `Intent`에 대하여 설명하시오
 
@@ -128,7 +139,8 @@
 
 # `Manifest`에 대해 설명하시오
 
-# `Inflation`에 대해 설명하시오
+# `Inflate`에 대해 설명하시오
+`XML`에 정의되있는 `View`를 실제 `View` 객체로 만드는 역할을 수행해줌
 
 # `JVM`/`DVM`에 대해 설명하시오
 
@@ -136,7 +148,15 @@
 
 # 안드로이드 `Task`에 대하여 설명하시오
 
+# `ListView` vs `RecyclerView`
+
 # `Restfull API`에 대하여 설명하시오
+
+# `Process`에 대하여 설명하시오
+
+# `Thread`에 대하여 설명하시오
+
+# `Handler`에 대하여 설명하시오
 
 # `Looper`에 대하여 설명하시오
 
