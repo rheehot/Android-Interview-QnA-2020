@@ -40,7 +40,7 @@
 
 ## Layout
 1. `onAttachedToWindow` : `View`가 `Window`에 연결되면 호출됨
-> `Drawing`할 표면 알고있는 단계 -> `listener` 설정 가능
+> `Drawing`할 표면을 알고있는 단계 -> `listener` 설정 가능
 2. `measure` 
 3. `onMeasure` : `View`의 `Size`를 확인하기 위해 호출됨
 > `ViewGroup`일 경우 계속해서 `Child View`에 대한 `Size` 측정을 하고, 그에 대한 결과로 자신의 `Size`를 결정
