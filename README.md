@@ -21,11 +21,21 @@
 1. `onCreate` : `Activity`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용됨
 2. `onStart` : `Activity`가 멈췄다가 다시 시작되기 **바로 전**에 호출됨
 3. `onResume` : `Activity`가 사용자와 상호 작용하기 **바로 전**에 호출됨
+> **다른 `Activity`가 `ForeGround`로 보여질 때 호출됨**
 4. `onPause` : 다른 `Activity`가 보여질 때 호출됨
+> **다른 `Activity`가 `BackGround`로 보여질 때 호출됨**
 5. `onStop` : `Activity`가 더 이상 보여지지 않을 떄 호출됨
 > 이는 메모리가 부족하여 종료될 시에는 호출되지 **않을** 수 있음<br/>
-> 또한 이는 **다른 `Activity`들의 생명주기 작업이 끝나야 호출**됨
+> 또한 이는 **다른 `Activity`들의 생명주기 작업이 끝나야 호출**됨<br/>
+> 그리고 **매우 짧은 호출 유지 시간**을 가짐<br/>
+> 마지막으로 `이 상태`에서 `onSaveInstanceState()` 메소드가 호출됨
 6. `onDestroy` : `Activity`가 소멸될 때(`finish()`) 호출됨
+
+### `ForeGround`
+현재 `Activity` **밖**에서 실행되는 것
+
+### `BackGround`
+현재 `Activity` **안**에서 다른 작업과 **동시**에 뒤에서 실행되는 것
 
 ## Layout
 1. `onAttachedToWindow` : `View`가 `Window`에 연결되면 호출됨
@@ -152,6 +162,8 @@
 ## `OOM KILLER`와의 차이점
 
 # `**Big** Size Image` 처리 방법
+
+# `Callable`과 `Runnable`의 차이점
 
 -----
 
