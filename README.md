@@ -20,7 +20,7 @@
 
 ## Activity
 1. `onCreate` : `Activity`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용됨
-2. `onStart` : `Activity`가 멈췄다가 다시 시작되기 **바로 전**에 호출됨
+2. `onStart` : `Activity`가 멈췄다가 보여지기 **바로 전**에 호출됨
 3. `onResume` : `Activity`가 사용자와 상호 작용하기 **바로 전**에 호출됨
 > **다른 `Activity`가 `ForeGround`로 보여질 때 호출됨**
 4. `onPause` : 다른 `Activity`가 보여질 때 호출됨
@@ -37,6 +37,22 @@
 
 ### BackGround
 현재 `Activity` **안에서** 다른 작업과 **동시**에 뒤에서 실행되는 것
+
+### 앱 사용 도중에 카카오톡으로 부터 알림이 오면,<br/>사용중인 앱의 `TopActivity`의 `Life-Cycle` 상태는 어떻게 되나요?
+`onPause` 상태가 됨
+
+### `onRestart`는 언제 호출되나요?
+**`onStart` 호출 전에**, 가려진 `Activity`가 다시 보여질 때 호출됨
+
+### `onCreate`와 `onStart`의 차이점은 무엇인가요?
+### onCreate
+`Activity`가 최초 생성되고, 필요한 작업의 초기화를 수행함
+
+### onStart
+`Activity`가 보여지기 위한 모든 작업들의 초기화가 끝났고, 보여지기 전에 호출됨
+
+### `onPause`와 `onStop`없이 `onDestory`가 호출되기 위한 조건이 무엇인가요?
+
 
 ## Layout
 1. `onAttachedToWindow` : `View`가 `Window`에 연결되면 호출됨
@@ -98,14 +114,6 @@
 9. `onDestroyView` : `Fragment`와 관련된 `View`들이 제거될 때 호출됨
 10. `onDestroy` : `Fragment`가 소멸될 때 호출됨
 11. `onDetach` : `Fragment`가 `Activity`로 부터 해제되어질 때 
-
-## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 `Life-Cycle` 상태는 어떻게 되나요?
-
-## `onRestart`는 언제 호출되나요?
-
-## `onCreate`와 `onStart`의 차이점은 무엇인가요?
-
-## `onPause`와 `onStop`없이 `onDestory`가 호출되기 위한 조건이 무엇인가요?
 
 # `ViewHolder` 패턴에 대하여 설명하시오
 
