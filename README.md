@@ -134,6 +134,9 @@
 #### Root Activity : `task`에 쌓이기 시작한 최하위 `activity`
 #### Top Activity : `task`에 가장 최근에 쌓인 최상위 `activity`
 
+> 만약 이 `task`에 쌓이지 않게 `activity`를 만들고 싶다면, `manifest`에 다음과 같이 추가하면 된다.<br/><br/>
+> `android:excludeFromRecents="true"`
+
 # 안드로이드 `Affinity`에 대하여 설명하시오
 `Activity` 실행 시 신규 `task`에 만들 경우, 지정할 `task`의 이름
 
