@@ -150,7 +150,7 @@
 |`Component-Name`|시작할 `component`의 `name`<br/>**`Explicit Intent`와 `Implicit Intent`의 구분 수단**|
 |`Action`|수행할 작업을 설명하는 문자열<br/>일반적인 `Action`은 `Intent`안에 상수로 정의되어 있음|
 |`Data`|작업을 수행할 `data` 및 해당 데이터의 `MIME` 유형을 참조하는 `Uri` 객체|
-|`Category`|`Intent`를 처리해야 하는 `component`의 종류에 대한 정보를 담은 문자열<br/>*생략 가능*|
+|`Category`|`Intent`를 처리해야 하는 `component`의 종류에 대한 정보를 담은 문자열|
 |`Extras`|요청한 작업을 수행하기 위해 필요한 추가 정보들을 담고 있는 `Key:Value` 객체|'
 |`Flags`|`Intent`에 대한 `Meta-Data`같은 역할|
 
