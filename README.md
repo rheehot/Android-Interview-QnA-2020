@@ -125,7 +125,7 @@
 
 ## `RecyclerView`에서의 `ViewHolder` 패턴
 > `ListView`와는 달리, `RecyclerView`는 `ViewHolder`의 사용이 **필수임**
-1. `override fun createViewHolder(holder: ViewHolder, viewType: Int)`에서 새로운 `View`를 생성함과 동시에 `ViewHolder`를 만들고 리턴함
+1. `override fun createViewHolder(holder: ViewHolder, viewType: Int)`에서 새로운 `View`를 생성함과 동시에 `ViewHolder`를 만들고 `return`함
 2. `override fun onBindViewHolder(holder: ViewHolder, position: Int)`에서 `paramater`로 제공받은 `ViewHolder`의 `value`를 변경함
 
 # 안드로이드 `Task`에 대하여 설명하시오
