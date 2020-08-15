@@ -129,8 +129,13 @@
 2. `override fun onBindViewHolder(holder: ViewHolder, position: Int)`에서 `paramater`로 제공받은 `ViewHolder`의 `value`를 변경함
 
 # 안드로이드 `Task`에 대하여 설명하시오
+`Stack` 형식으로 차곡차곡 쌓이는 `Activity`들의 집합
+
+#### Root Activity : `task`를 시작한 최하위 `activity`
+#### Top Activity : `task`에 가장 마지막으로 쌓인 최상위 `activity`
 
 # 안드로이드 `Affinity`에 대하여 설명하시오
+`Activity` 실행 시 신규 `task`에 만들 경우, 지정할 `task`의 이름
 
 # `Intent`에 대하여 설명하시오
 `Component`(`Activity`, `Service`, `Broadcast Receiver`)간에 통신을 하기 위한 메시지 
