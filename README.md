@@ -27,6 +27,8 @@
 
 ## Fragment
 
+## Layout
+
 ## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 생명주기 상태는 어떻게 되나요?
 
 ## `onRestart`는 언제 호출되나요?
