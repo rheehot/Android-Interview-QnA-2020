@@ -171,4 +171,4 @@
 ## 잘 보셨다면, `Star`와 `Fork` 부탁드려요!
 ### 이 난잡한 `repository`를 보시는 분들과 저의 `면접 합격을 기원`합니다.
 
-# Happy Coding with Interview :)
+# Happy Interview with Coding :)
