@@ -29,7 +29,7 @@
 > 이는 메모리가 부족하여 종료될 시에는 호출되지 **않을** 수 있음<br/>
 > 또한 이는 **다른 `Activity`들의 생명주기 작업이 끝나야 호출**됨<br/>
 > 그리고 **매우 짧은 호출 유지 시간**을 가짐<br/>
-> 마지막으로 `이 상태`에서 `onSaveInstanceState()` 메소드가 호출됨
+> 마지막으로 이 상태에서 `onSaveInstanceState()` 메소드가 호출됨
 6. `onDestroy` : `Activity`가 소멸될 때(`finish()`) 호출됨
 
 ### `ForeGround`
@@ -40,7 +40,7 @@
 
 ## Layout
 1. `onAttachedToWindow` : `View`가 `Window`에 연결되면 호출됨
-> `Drawing`할 표면이 알고있는 단계 -> `listener` 설정 가능
+> `Drawing`할 표면 알고있는 단계 -> `listener` 설정 가능
 2. `measure` 
 3. `onMeasure` : `View`의 `Size`를 확인하기 위해 호출됨
 > `ViewGroup`일 경우 계속해서 `Child View`에 대한 `Size` 측정을 하고, 그에 대한 결과로 자신의 `Size`를 결정
