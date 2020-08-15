@@ -52,7 +52,7 @@
 `Activity`가 보여지기 위한 모든 작업들의 초기화가 끝났고, 보여지기 전에 호출됨
 
 ### `onPause`와 `onStop`없이 `onDestory`가 호출되기 위한 조건이 무엇인가요?
-`finish()` 코드 
+`finish()` 코드 사용
 
 ## Layout
 1. `onAttachedToWindow` : `View`가 `Window`에 연결되면 호출됨
