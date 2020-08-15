@@ -65,7 +65,7 @@
 6. `dispatchToDraw`
 7. `draw`
 8. `onDraw` : `View`가 그려질 준비가 되었을 때 호출됨
-> `onDraw`는 여러번 호출되므로, 여기서는 `Object`를 만들면 안됨
+> `onDraw`는 여러번 호출되므로, 여기서는 `객체`를 만들면 안됨
 
 ### onDetechedFromWindow
 `View`가 `Window`에서 분리될 때 호출됨
@@ -123,12 +123,24 @@
 1. `override fun getView(position: Int, convertView: View, parent: ViewGroup)` 에서 `convertView`가 `null` 일 때만 **최초 한 번** `inflate`하고 `ViewHolder`룰 생성해 각 요소를 `findViewById`로 연결시켜 저장하고 `convertView`에 `tag`로 저장시킴
 2. 그리고 다음부터는 `ViewHolder`를 `convertView`의 `tag`로 불러와서 재사용함
 
-## `RecyclerView`에서의 `ViewHolder`
+## `RecyclerView`에서의 `ViewHolder` 패턴
 > `ListView`와는 달리, `RecyclerView`는 `ViewHolder`의 사용이 **필수임**
 1. `override fun createViewHolder(holder: ViewHolder, viewType: Int)`에서 새로운 `View`를 생성함과 동시에 `ViewHolder`를 만들고 리턴함
 2. `override fun onBindViewHolder(holder: ViewHolder, position: Int)`에서 `paramater`로 제공받은 `ViewHolder`의 `value`를 변경함
 
 # `Intent`에 대하여 설명하시오
+`Component`(`Activity`, `Service`, `Broadcast Receiver`)간에 통신을 하기 위한 메시지 
+
+## Intent Type
+1. `Explicit Intent` : 시작할 `component`의 `class-name`을 지정
+> `명시적 인텐드` <br/>
+> 일반적으로 본인이 만든 `component`를 실행할 때 사용<br/><br/>
+> EX) `Intent(context, MainActivity::class.java)`
+
+2. `Implicit Intent` : 특정 `component`의 `class-name` 없이 어떠한 작업을 수행할지만 선언함
+> `암시적 인텐드`><br/>
+>/ 해당 `Intent`를 처리할 수 있는 `component`를 `system`이 필터링하여 수행하거나, 사용자에게 선택하도록 함<br/><br/>
+> EX) `adb` 도구
 
 # `Call by Value`와 `Call by Reference`에 대하여 설명하시오
 
