@@ -133,13 +133,13 @@
 
 ## Intent Type
 1. `Explicit Intent` : 시작할 `component`의 `class-name`을 지정
-> `명시적 인텐드` <br/>
+> `명시적 인텐드`<br/>
 > 일반적으로 본인이 만든 `component`를 실행할 때 사용<br/><br/>
 > EX) `Intent(context, MainActivity::class.java)`
 
 2. `Implicit Intent` : 특정 `component`의 `class-name` 없이 어떠한 작업을 수행할지만 선언함
-> `암시적 인텐드`><br/>
->/ 해당 `Intent`를 처리할 수 있는 `component`를 `system`이 필터링하여 수행하거나, 사용자에게 선택하도록 함<br/><br/>
+> `암시적 인텐드`<br/>
+> 해당 `Intent`를 처리할 수 있는 `component`를 `system`이 필터링하여 수행하거나, 사용자에게 선택하도록 함<br/><br/>
 > EX) `adb` 도구
 
 # `Call by Value`와 `Call by Reference`에 대하여 설명하시오
