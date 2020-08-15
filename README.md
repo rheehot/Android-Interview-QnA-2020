@@ -32,10 +32,10 @@
 6. `onDestroy` : `Activity`가 소멸될 때(`finish()`) 호출됨
 
 ### `ForeGround`
-현재 `Activity` **밖**에서 실행되는 것
+현재 `Activity` **밖에서** 실행되는 것
 
 ### `BackGround`
-현재 `Activity` **안**에서 다른 작업과 **동시**에 뒤에서 실행되는 것
+현재 `Activity` **안에서** 다른 작업과 **동시**에 뒤에서 실행되는 것
 
 ## Layout
 1. `onAttachedToWindow` : `View`가 `Window`에 연결되면 호출됨
@@ -80,6 +80,23 @@
 `dispatchToDraw()`부터 `Layout`을 재호출
 
 ## Fragment
+1. `onAttach` : `Fragment`가 `Activity`에 `attach`될 때 
+> `argument`로 `Context`가 들어옴
+2. `onCreate` : `Fragment`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용됨
+> `UI` 초기화는 할 수 **없음**
+3. `onCreateView` : `Layout`을 `inflate`하는 곳
+> `UI` 초기화를 할 수 **있음**
+4. `onActivityCreated` : `Activity`의 `Fragment`의 `View`가 모두 생성된 상태
+> `UI` 변경 작업을 하는 곳
+5. `onStart` : `Fragment`가 보여지기 **바로 전**에 호출됨
+6. `onResume` : `Fragment`가 사용자와 상호 작용하기 **바로 전**에 호출됨
+7. `onPause` : 다른 `Activity`가 보여질 때 호출됨
+> `Fragment`의 `Parent Activity`가 아닌 다른 `Activity`가 `ForeGround`로 나오게 될 때 호출됨<br/>
+> **또한 `BackStack`으로 들어감**
+8. `onStop` : 다른 `Activity`가 화면을 완전히 가림
+9. `onDestroyView`
+10. `onDestroy`
+11. `onDetach`
 
 ## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 `Life-Cycle` 상태는 어떻게 되나요?
 
