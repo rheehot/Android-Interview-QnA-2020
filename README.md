@@ -63,6 +63,14 @@
 # `ABI`에 대하여 설명하시오
 
 # `HTTP` 라이브러리들의 역사에 대하여 설명하시오
+2009년 : `Android` 발표, `HttpClient`, 아파치의 `DefaultHttpClient` 사용
+2011년 : `Google Developer` 블로그에서 `HttpUrlConnection` 사용 권장
+이후 : `Volley`나 `OkHttp`의 등장으로 `HTTP` 통신이 쉬워짐
+2014년 : `HttpClient`가 `Deprecated`되면서 이를 베이스로 하는 `Volley`도 같이 `Deprecated`됨
+이후 : `OkHttp`와 그 래퍼인 `Retrofit`이 등장하여 인기를 가짐
+
+## `Retrofit`가 인기를 받게된 이유?
+`Client` 부분과 `Callback` 형식들을 플러그로 설정 할 수 있다
 
 # `Context`에 대하여 설명하시오
 
