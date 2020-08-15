@@ -168,8 +168,6 @@
 
 ## `Android`는 `JVM`과 `DVM`중 어느것인지 설명하시오
 
-# 안드로이드 `Task`에 대하여 설명하시오
-
 # `ListView` vs `RecyclerView`
 
 # `Restfull API`에 대하여 설명하시오
