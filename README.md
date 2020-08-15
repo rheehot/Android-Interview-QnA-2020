@@ -131,8 +131,8 @@
 # 안드로이드 `Task`에 대하여 설명하시오
 `Stack` 형식으로 차곡차곡 쌓이는 `Activity`들의 집합
 
-#### Root Activity : `task`를 시작한 최하위 `activity`
-#### Top Activity : `task`에 가장 마지막으로 쌓인 최상위 `activity`
+#### Root Activity : `task`에 쌓이기 시작한 최하위 `activity`
+#### Top Activity : `task`에 가장 최근에 쌓인 최상위 `activity`
 
 # 안드로이드 `Affinity`에 대하여 설명하시오
 `Activity` 실행 시 신규 `task`에 만들 경우, 지정할 `task`의 이름
