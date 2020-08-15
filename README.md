@@ -81,7 +81,7 @@
 
 ## Fragment
 
-## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 생명주기 상태는 어떻게 되나요?
+## 앱 사용 도중에 카카오톡으로 부터 알림이 오면, 사용중인 앱의 `TopActivity`의 `Life-Cycle` 상태는 어떻게 되나요?
 
 ## `onRestart`는 언제 호출되나요?
 
@@ -140,7 +140,7 @@
 이후 : `OkHttp`와 그 래퍼인 `Retrofit`이 등장하여 인기를 가짐<br/>
 
 ## `Retrofit`가 인기를 받게된 이유?
-`Client` 부분과 `Callback` 형식들을 플러그로 설정 할 수 있다
+`Client` 부분과 `Callback` 형식들을 플러그로 설정 할 수 있음
 
 # `Context`에 대하여 설명하시오
 > goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#context)
