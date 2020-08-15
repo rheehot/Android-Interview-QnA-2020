@@ -154,6 +154,8 @@
 |`Extras`|요청한 작업을 수행하기 위해 필요한 추가 정보들을 담고 있는 `Key:Value` 객체|'
 |`Flags`|`Intent`에 대한 `Meta-Data`같은 역할|
 
+# `Pending Intent`에 대하여 설명하시오
+
 # `Call by Value`와 `Call by Reference`에 대하여 설명하시오
 
 ## `Java`는 `CbV`와 `CbR`중 어떤것인지 설명하시오
@@ -186,13 +188,9 @@
 
 # `Thread`간 통신 방법에 대하여 설명하시오
 
-# `Intent`의 `Flag`들에 대하여 설명하시오
-
 # 안드로이드의 메모리 관리에 대하여 설명하시오
 
 # 안드로이드의 메모리 구조에 대하여 설명하시오
-
-# `Pending Intent`에 대하여 설명하시오
 
 # `Activity`간 통신에 대하여 설명하시오
 
