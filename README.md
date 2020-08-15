@@ -130,6 +130,8 @@
 
 # 안드로이드 `Task`에 대하여 설명하시오
 
+# 안드로이드 `Affinity`에 대하여 설명하시
+
 # `Intent`에 대하여 설명하시오
 `Component`(`Activity`, `Service`, `Broadcast Receiver`)간에 통신을 하기 위한 메시지 
 
