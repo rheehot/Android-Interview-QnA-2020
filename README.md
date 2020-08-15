@@ -40,6 +40,28 @@
 8. `onDraw` : `View`가 그려질 준비가 되었을 때 호출됨
 > `onDraw`는 여러번 호출되므로, 여기서는 `Object`를 만들면 안됨
 
+### `onDetechedFromWindow`
+`View`가 `Window`에서 분리될 때 호출됨
+> 더 이상 `Drawing`할 `View`가 없음을 알림 -> 모든 작업들을 정리해야 하는 시기
+
+### `onFinishInflate`
+`View` 전개가 끝난 후 호출됨
+> `Layout`일 경우, 모든 `Child View`가 추가 된 후에 호출됨
+
+### `MeasureSpec`
+`MeasureSpec`은 `parent`에서 `child`으로 전달되는 `Layout`들의 요구 사항을 캡출화함
+
+#### `MeasureSpec.EXACTLY`
+`Parent View`가 `Child View`의 정확한 `Size`를 결정함.
+> `Child View`의 `Size`에 관계없이 무조건 정해진 `Size`로 설정함
+
+#### `MeasureSpec.AT_MOST`
+`Child View`는 지정된 `Size`까지의 원하는 만큼 `Size`를 정할 수 있음
+
+#### `MeasureSpec.UNSPECIFIED`
+`Parent View`가 `Child View`의 `Size`에 대해 제한을 두지 않음
+> `Child View`는 원하는 만큼의 `Size`를 정할 수 있음
+
 ### `requestLayout()`과 `invalidate()`의 차이점
 #### `requestLayout()`
 `measure`부터 `Layout`을 재호출
