@@ -140,7 +140,17 @@
 2. `Implicit Intent` : 특정 `component`의 `class-name` 없이 어떠한 작업을 수행할지만 선언함
 > `암시적 인텐드`<br/>
 > 해당 `Intent`를 처리할 수 있는 `component`를 `system`이 필터링하여 수행하거나, 사용자에게 선택하도록 함<br/><br/>
-> EX) `adb` 도구
+> EX) [클릭](https://developer.android.com/guide/components/intents-common?hl=ko)
+
+## Intent 구성요소
+|**구성요소**|**내용**|
+|-----|-----|
+|`Component-Name`|시작할 `component`의 `name`.<br/>**`Explicit Intent`와 `Implicit Intent`의 구분 수단**|
+|`Action`|수행할 작업을 설명하는 문자열<br/>일반적인 `Action`은 `Intent`안에 상수로 정의되어 있음|
+|`Data`|작업을 수행할 `data` 및 해당 데이터의 `MIME` 유형을 참조하는 `Uri` 객체|
+|`Category`|`Intent`를 처리해야 하는 `component`의 종류에 대한 정보를 담은 문자열<br/>*생략 가능*|
+|`Extras`|요청한 작업을 수행하기 위해 필요한 추가 정보들을 담고 있는 `Key:Value` 객체|'
+|`Flags`|`Intent`에 대한 `Meta-Data`같은 역할|
 
 # `Call by Value`와 `Call by Reference`에 대하여 설명하시오
 
