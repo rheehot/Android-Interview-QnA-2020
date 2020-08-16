@@ -178,7 +178,7 @@
 # `Inflate`에 대해 설명하시오
 `XML`에 정의되있는 `View`를 실제 `View` 객체로 만드는 역할을 수행해줌
 
-# `JVM`/`DVM`에 대해 설명하시오
+# `JVM`/`DVM`/`ART`에 대해 설명하시오
 
 ## `Android`는 `JVM`과 `DVM`중 어느것인지 설명하시오
 
@@ -189,6 +189,8 @@
 # `Process`에 대하여 설명하시오
 
 # `Thread`에 대하여 설명하시오
+
+## `Thread Pool`에 대하여 설명하시오
 
 # `Handler`에 대하여 설명하시오
 
