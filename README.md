@@ -178,10 +178,31 @@
 
 # 2020.08.17.
 # `Pending Intent`에 대하여 설명하시오
+다른 `Process`(`Application`)에서 권한을 허가하여 가지고 있는 `Intent`를 본인 `Process`에서 실행하는 것 처럼 해주는 것
 
-# `Call by Value`와 `Call by Reference`에 대하여 설명하시오
+> EX) `Notification`으로 작업을 수행할 때 `PendingIntent`를 사용한다.<br/><br/>`Notification`은 `NotifcationManager`라는 다른 `process`에서 실행되기 때문.
 
-## `Java`는 `CbV`와 `CbR`중 어떤것인지 설명하시오
+# `Call by Value`/`Call by Reference`/`Call by Assignment`에 대하여 설명하시오
+> 함수의 호출 방식
+
+## CbV
+> 함수에 값을 복사해서 전달하는 방식
+함수의 인자로 전달되는 변수를 함수의 매개변수로 복사해서 실행함.
+즉, 함수에 사용되는 매개변수들은 별도의 `scope`를 가지며 함수의 매개변수를 바꿔도 함수로 전달한 원래 변수의 값은 바뀌지 않음.
+ 
+## CbR
+> 함수에 값의 주소값을 전달하는 방식
+함수에 인자로 전될되는 변수를 변수의 주소값으로 바꿔서 함수의 매개변수로 전달함.
+즉, 함수로 전달되는 매개변수들과 원래의 변수들과 동일 `scope`를 가져서 함수의 매개변수 값이 바뀌면 원래 변수의 값도 바뀜.
+
+## CbA
+> 전달되는 객체에 따라 참조방식이 결정되는 방식
+`Mutable Object`는 `CbR`을 따르고, `Immutable Object`는 `CbV`를 따른다.
+
+## `Java`는 `CbV`/`CbR`/`CbA`중 어떤것인지 설명하시오
+`Primitive Type`(원시 자료형)은 `CbV`를 따르고, `Reference Type`(참조 자료형)은 `CbR`를 따른다.
+
+# `Java`의 원시 자료형을 설명하시오
 
 # 안드로이드 4대 컴포너트에 대하여 설명하시오
 > goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#4%EB%8C%80-%EC%BB%B4%ED%8F%AC%EB%84%88%ED%8A%B8)
