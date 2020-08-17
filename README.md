@@ -205,7 +205,31 @@
 ## `Java`는 `CbV`/`CbR`/`CbA`중 어떤것인지 설명하시오
 `Primitive Type`(원시 자료형)은 `CbV`를 따르고, `Reference Type`(참조 자료형)은 `CbR`를 따른다.
 
-# `Java`의 원시 자료형을 설명하시오
+# `Java`의 자료형을 설명하시오
+## `Primitive Type`(원시 자료형)
+1. Boolean Type<br/>
+&nbsp;* **boolean**<br/>
+2. `Numeric Type`<br/>
+&nbsp;2-1. `Integral Type`<br/>
+&nbsp;&nbsp;* `Integer Type` : **`short`**, **`int`**, **`long`**<br/>
+&nbsp;&nbsp;* `Floating Type` : **`float`**, **`double`**<br/>
+&nbsp;2-2. `Character Type` : **`char`**<br/>
+ 
+> 자료형의 길이가 항상 `고정적`임
+> **`비객체`** 타입 -> 즉 `null`을 가질 수 없음.
+
+## `Reference Type`(참조 자료형)
+1. `Class Type`<br/>
+ 1.1: `String Class`<br/>
+ 1.2: `Wrapper Class`<br/>
+  1.2.1: `void`의 `Wrapper Class`는 `Void`<br/>
+2. `Interface Type`<br/>
+3. `Array Type`<br/>
+4. `Enum Type`<br/>
+5. `etc...`<br/>
+
+> 기본적으로 `Object`를 상속받으면 `Reference Type`이 됨
+> 또한 선언한 자료형이 `Primitive Type`이 아니면 `Reference Type`이 됨
 
 # `new String()` vs `StringBuilder` vs `StringBuffer`
 
