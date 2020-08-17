@@ -219,13 +219,13 @@
 > **`비객체`** 타입 -> 즉 `null`을 가질 수 없음.
 
 ## `Reference Type`(참조 자료형)
-1. `Class Type`<br/>
-&nbsp;1.1: `String Class`<br/>
-&nbsp;1.2: `Wrapper Class`<br/>
+1. **`Class Type`**<br/>
+&nbsp;* `String Class`<br/>
+&nbsp;* `Wrapper Class`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;* `void`의 `Wrapper Class`는 `Void`<br/>
-2. `Interface Type`<br/>
-3. `Array Type`<br/>
-4. `Enum Type`<br/>
+2. **`Interface Type`**<br/>
+3. **`Array Type`**<br/>
+4. **`Enum Type`**<br/>
 5. `etc...`<br/>
 
 > 기본적으로 `Object`를 상속받으면 `Reference Type`이 됨<br/>
