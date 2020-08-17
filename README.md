@@ -272,9 +272,23 @@
 |`Broadcast Receiver`|안드로이드에서 발생하는 각종 `event`를 받아옴<br/>시스템에서 시작됨|
 |`Content Provider`|데이터를 관리하고 다른 앱에 데이터를 제공<br/>**데이터 공유를 위해 표준화된 `SQLite interface` 사용 (대용량 가능)**|
 
-> 안드러이드 4대 컴포너트는 `Intent` 속성에 포함된다.
+> 안드로이드 4대 컴포너트는 `Intent` 속성에 포함된다.
 
 # `Manifest`에 대해 설명하시오
+`Manifest`(`매니페스트`)는 `Application`에 대한 각종 정보를 기록하는 파일이다.
+
+|**Tag**|**Description**|
+|-----|-----|
+|`<Manifest>`|`Application`에 대한 전반적인 정보를 정의한다.<br/>EX) 버전코드|
+|`<application>`|`Application`의 이름, 아이콘등을 정의한다.|
+|`<activity>`|`Application`에서 사용될 `Activity`들를 정의한다.|
+|`<service>`|`Application`에서 사용될 `service`들을 정의한다.|
+|`<provider>`|`Application` 안에서 사용되는 데이터들을 다른 `Application`으로 공유할 수 있게 해주는 `Content-Provider`들을 정의한다.|
+|`<receiver>`|`Application`에서 사용될 `Broadcast-Receiver`를 정의한다.|
+|`<uses-permission>`|`Application`에서 사용될 `permission`들을 정의한다.|
+|`<uses-library>`|`Application`에서 사용될 외부 라이브러리들을 정의한다.|
+|`<uses-sdk>`|`Application`에서 최소로 필요로 하는 `SDK` 버전을 정의한다.|
+
 
 # `Inflate`에 대해 설명하시오
 `XML`에 정의되있는 `View`를 실제 `View` 객체로 만드는 역할을 수행해줌
