@@ -179,7 +179,8 @@
 # 2020.08.17.
 # `Pending Intent`에 대하여 설명하시오
 다른 `Process`(`Application`)에서 권한을 허가하여 가지고 있는 `Intent`를 본인 `Process`에서 실행하는 것 처럼 해주는 것
-> EX) `Notification`으로 작업을 수행할 때 `PendingIntent`를 사용한다.<br/><br/>`Notification`은 `NotifcationManager`라는 다른 `process`에서 실행되기 때문.
+
+> EX) `Notification`으로 작업을 수행할 때 `PendingIntent`를 사용한다.<br/>`Notification`은 `NotifcationManager`라는 다른 `process`에서 실행되기 때문.
 
 # `Call by Value`/`Call by Reference`/`Call by Assignment`에 대하여 설명하시오
 > 함수의 호출 방식
