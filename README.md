@@ -231,10 +231,47 @@
 > 기본적으로 `Object`를 상속받으면 `Reference Type`이 됨<br/>
 > 또한 선언한 자료형이 `Primitive Type`이 아니면 `Reference Type`이 됨
 
-# `new String()` vs `StringBuilder` vs `StringBuffer`
+# `String` vs `StringBuilder` vs `StringBuffer`
+## String
+기본적으로 `immutable`(`불변`)이다.<br/>
+즉, 값이 바뀌게 되면 **새로운 메모리영역을 가르키는 새로운 변수를 만든다.**<br/>
+값이 바뀌기 전 이전 변수는 `Garbage`로 남아있다가 `GC`(`Garbage Collection`)에 의해 사라지게 된다.<br/>
+또한 `쓰레드 동기화`가 **가능하다**.
+
+> 문자열 연산이 **적고** `멀티쓰레드`일 경우 사용
+
+## StringBuilder
+기본적으로 `muta/ble`(`가변`)이다.<br/>
+**그리고 `쓰레드 동기화`가 가능하다**.
+
+> 문자열 연산이 **많고** `멀티쓰레드` 환경일 경우 사용
+
+## StringBuffer
+기본적으로 `mutable`(`가변`)이다.<br/>
+**그리고 `쓰레드 동기화`가 불가능하다**.
+
+> 문자열 연산이 **많고** `단일쓰레드` 이거나, `동기화`를 고려하지 않는 환경일 때 사용
+
+
+|**구분**|**`String`**|**`StringBuffer`**|**`StringBuilder`**|
+|-----|-----|-----|-----|
+|**`Memory`**|`String pool`|`Heap`|`Heap`|
+|**`Modifiable`**|No|Yes|Yes|
+|**`Thread-Safe`**|Yes|Yes|No|
+|**`Synchronized`**|Yes|Yes|No|
+|**`Performance`**|Fast|Slow|Fast|
 
 # 안드로이드 4대 컴포너트에 대하여 설명하시오
 > goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#4%EB%8C%80-%EC%BB%B4%ED%8F%AC%EB%84%88%ED%8A%B8)
+
+|**`Intent`**|**Description**|
+|-----|-----|
+|`Activity`|사용자와 상호작용 하는 `interface`|
+|`Service`|백그라운드 처리용<br/>**사용자와 직접 상호작용을 하지 않는다.**|
+|`Broadcast Receiver`|안드로이드에서 발생하는 각종 `event`를 받아옴<br/>시스템에서 시작됨|
+|`Content Provider`|데이터를 관리하고 다른 앱에 데이터를 제공<br/>**데이터 공유를 위해 표준화된 `SQLite interface` 사용 (대용량 가능)**|
+
+> 안드러이드 4대 컴포너트는 `Intent` 속성에 포함된다.
 
 # `Manifest`에 대해 설명하시오
 
