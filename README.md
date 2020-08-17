@@ -164,6 +164,18 @@
 |`Extras`|요청한 작업을 수행하기 위해 필요한 추가 정보들을 담고 있는 `Key:Value` 객체|'
 |`Flags`|`Intent`에 대한 `Meta-Data`같은 역할|
 
+## MIME란?
+이 데이터가 어떤 형식의 데이터인지 설명하는 명칭
+
+|**타입**|**설명**|**예시**|
+|-----|-----|-----|
+|text|모든 종류의 텍스트|`text/plane`<br/>`text/html`|
+|image|모든 종류의 이미지|`image/gif`<br/>`image/png`|
+|audio|모든 종류의 오디오|`audio/midi`<br/>`audio/wav`|
+|video|모든 종류의 비디오|`video/webm`<br/>`video/ogg`|
+|application|모든 종류의 데이터|`application/xml`<br/>`application/pdf`|
+> 더 많은 정보) [[방문]](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+
 # `Pending Intent`에 대하여 설명하시오
 
 # `Call by Value`와 `Call by Reference`에 대하여 설명하시오
