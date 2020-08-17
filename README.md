@@ -176,6 +176,7 @@
 |application|모든 종류의 데이터|`application/xml`<br/>`application/pdf`|
 > 더 많은 정보) [[방문]](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
+# 2020.08.17.
 # `Pending Intent`에 대하여 설명하시오
 
 # `Call by Value`와 `Call by Reference`에 대하여 설명하시오
