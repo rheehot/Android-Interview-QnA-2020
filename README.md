@@ -291,11 +291,11 @@
 
 
 # `Inflate`에 대해 설명하시오
-`XML`에 정의되있는 `View`를 실제 `View` 객체로 만드는 역할을 수행해줌
+`XML`에 정의되있는 `View`를 실제 `View` 객체로 만드는 역할을 수행한다.
 
 # `JVM`/`DVM`/`ART`에 대해 설명하시오
 
-## `Android`는 `JVM`과 `DVM`중 어느것인지 설명하시오
+## `Android`는 `JVM`/`DVM`/`ART` 중 어느것인지 설명하시오
 
 # `ListView` vs `RecyclerView`
 
