@@ -206,7 +206,7 @@
 `Mutable Object`는 `CbR`을 따르고, `Immutable Object`는 `CbV`를 따른다.
 
 ## `Java`는 `CbV`/`CbR`/`CbA`중 어떤것인지 설명하시오
-`Primitive Type`(원시 자료형)은 `CbV`를 따르고, `Reference Type`(참조 자료형)은 `CbR`를 따른다.
+`Call by Value`를 따릅니다.
 
 # `Java`의 자료형을 설명하시오
 ## `Primitive Type`(원시 자료형)
