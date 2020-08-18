@@ -20,6 +20,7 @@
 
 ## Activity
 1. `onCreate` : `Activity`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용됨
+> **만약 A - > B 갔다가 다시 B -> A 로 이전 `stack`으로 돌아오는 `activity`일 경우, `onCreate` 대신 `onRestart`가 호출됨**
 2. `onStart` : `Activity`가 멈췄다가 보여지기 **바로 전**에 호출됨
 3. `onResume` : `Activity`가 사용자와 상호 작용하기 **바로 전**에 호출됨
 > **다른 `Activity`가 `ForeGround`로 보여질 때 호출됨**
