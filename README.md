@@ -31,6 +31,7 @@
 > 그리고 **매우 짧은 호출 유지 시간**을 가짐<br/>
 > 마지막으로 이 상태에서 `onSaveInstanceState()` 메소드가 호출됨
 6. `onDestroy` : `Activity`가 소멸될 때(`finish()`) 호출됨
+> **`Stack`에서 소멸될 때 호출**
 
 ### ForeGround
 현재 `Activity` **밖에서** 실행되는 것
