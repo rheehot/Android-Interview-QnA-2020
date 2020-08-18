@@ -67,7 +67,11 @@
 6. `dispatchToDraw`
 7. `draw`
 8. `onDraw` : `View`가 그려질 준비가 되었을 때 호출됨
-> `onDraw`는 여러번 호출되므로, 여기서는 `객체`를 만들면 안됨
+> `onDraw`는 여러번 호출되므로, 여기서는 `객체`를 만들면 안됨<br/>**`Canvas`는 무엇을 그릴지를 담당하고, `Paint`는 어떻게 그릴지를 담당함**
+
+
+
+출처: https://duzi077.tistory.com/188?category=657555 [개발하는 두더지]
 
 ### onDetechedFromWindow
 `View`가 `Window`에서 분리될 때 호출됨
