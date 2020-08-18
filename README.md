@@ -138,7 +138,8 @@
 > `android:excludeFromRecents="true"`
 
 # 안드로이드 `Affinity`에 대하여 설명하시오
-`Activity` 실행 시 신규 `task`에 만들 경우, 지정할 `task`의 이름
+`Activity` 실행 시 신규 `task`에 만들 경우, 지정할 `task`의 이름<br/>
+**이때 `Custom Affinity`의 이름에는 최소 한 개 이상의 `.`가 들어가야 한다.**
 
 # `Intent`에 대하여 설명하시오
 `Component`(`Activity`, `Service`, `Broadcast Receiver`)간에 통신을 하기 위한 메시지 
