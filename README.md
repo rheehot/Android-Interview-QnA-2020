@@ -348,7 +348,14 @@
 `ART-compile` 방식의 많은 개선이 이뤄져 많은 문제들  해결
 
 # `ListView` vs `RecyclerView`
-
+|**분류**|**`ListView`**|**`RecyclerView`**|
+|-----|-----|-----|
+|**`ViewHolder`**|선택|필수|
+|**`Item Layout`**|세로 방향만 지원|`LayoutManager`을 통해 다양하게 설정 가능|
+|**`Item Animation`**|별도의 `animation`이 없다|`RecyclerView.ItemAnimator` 클래스를 통해 제어할 수 있다.|
+|**`Adapter`**|다양한 분류의 어뎁터가 존재한다.<br/>EX) `ArrayAdapter`, `CursorAdapter`, etc...|`Item`을 보여주기 위한 `Adapter`를 직접 정의해서 사용해야 한다.|
+|**`Decoration`**|`android:divider` 속성을 이용하여 `item` 들을 관리할 수 있다.|`RecycerView.ItemDecoration` 를 사용하여 구분선을 설정해야 한다.|
+|**`Click Event`**|`AdapterView.OnItemClickListener` `interface`를 통해 설정할 수 있다.|`RecyclerVier.OnItemClickListener` 이라는 개별 터치를 관리하는 `interface`는 있지만, `OnClickListener`는 따로 존재하지 않아 직접 정의해서 사용해야 한다.|
 
 # `Restful API`에 대하여 설명하시오
 
