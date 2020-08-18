@@ -348,7 +348,8 @@
 
 # `ListView` vs `RecyclerView`
 
-# `Restfull API`에 대하여 설명하시오
+
+# `Restful API`에 대하여 설명하시오
 
 # `Process`에 대하여 설명하시오
 
