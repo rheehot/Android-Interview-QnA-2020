@@ -412,11 +412,11 @@
 
 ## Priority
 
-## `OOM KILLER`와의 차이점
+## `OOM KILLER`와의 차이점을 설명하시오
 
-# `**Big** Size Image` 처리 방법
+# `**Big** Size Image` 처리 방법을 설명하시오
 
-# `Callable`과 `Runnable`의 차이점
+# `Callable`과 `Runnable`의 차이점을 설명하시오
 
 -----
 
