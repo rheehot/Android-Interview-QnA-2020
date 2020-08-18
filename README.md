@@ -359,7 +359,11 @@
 |**`Decoration`**|`android:divider` 속성을 이용하여 `item` 들을 관리할 수 있다.|`RecycerView.ItemDecoration` 를 사용하여 구분선을 설정해야 한다.|
 |**`Click Event`**|`AdapterView.OnItemClickListener` `interface`를 통해 설정할 수 있다.|`RecyclerVier.OnItemClickListener` 이라는 개별 터치를 관리하는 `interface`는 있지만, `OnClickListener`는 따로 존재하지 않아 직접 정의해서 사용해야 한다.|
 
-# `flowable`과 `observable`의 차이점을 설명하시오
+# `Flowable`과 `Observable`의 차이점을 설명하시오
+`Flowable`은 `Backpressure Buffer`가 **있지만**, `Observable`은 `Backpressure Buffer`가 **없다.**
+
+## Backpressure Buffer이란?
+`소비`되는 데이터에 비해 `생산`되는 데이터의 양이 너무 많을 경우 `OutOfMemory` 같은 `exception`이 발생 할 수 있기 때문에, `생산`되는 데이터의 양을 `소비`되는 데이터의 양에 비례해서 조절해주는 역할을 해 준다.
 
 # `Restful API`에 대하여 설명하시오
 
