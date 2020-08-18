@@ -362,7 +362,7 @@
 # `Flowable`과 `Observable`의 차이점을 설명하시오
 `Flowable`은 `Backpressure Buffer`가 **기본적으로 내장되어 있지만**, `Observable`은 `Backpressure Buffer`가 **기본적으로 내장되어있지 않다.** (따라서 직접 추가해서 등록해줘야 한다)
 
-## Backpressure Buffer란?
+## `Backpressure Buffer`란?
 `소비`되는 데이터에 비해 `생산`되는 데이터의 양이 너무 많을 경우 `OutOfMemory` 같은 `exception`이 발생 할 수 있기 때문에, `생산`되는 데이터의 양을 `소비`되는 데이터의 양에 비례해서 조절해주는 역할을 해 준다.
 
 # `REST`에 대하여 설명하시오
@@ -377,7 +377,7 @@
 `Update` : 수정 (`PUT`)<br/>
 `Delete` : 삭제 (`DELETE`)
 
-**장점** : `Server`와 `Client`의 역할을 명확하게 구분한다.
+**장점** : `Server`와 `Client`의 역할을 명확하게 구분한다.<br/>
 **단점** : `REST`는 설계 가이드일 뿐이라, 표준이 존재하지 않는다.
 
 ## REST API란?
