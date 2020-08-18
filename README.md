@@ -365,7 +365,11 @@
 ## Backpressure Buffer란?
 `소비`되는 데이터에 비해 `생산`되는 데이터의 양이 너무 많을 경우 `OutOfMemory` 같은 `exception`이 발생 할 수 있기 때문에, `생산`되는 데이터의 양을 `소비`되는 데이터의 양에 비례해서 조절해주는 역할을 해 준다.
 
-# `Restful API`에 대하여 설명하시오
+# `REST`에 대하여 설명하시오
+
+## REST API란?
+
+## RESTful이란?
 
 # `Process`에 대하여 설명하시오
 
