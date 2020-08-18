@@ -295,8 +295,46 @@
 
 # 2020.08.18.
 # `JVM`/`DVM`/`ART`에 대해 설명하시오
+## JVM
+> `ByteCode` -> `interpret` -> 각 `OS`에 맞는 기계어로 번역 -> 실행
+
+**장점** : `OS`에 구애받지 않고, 해당 `OS`에 맞는 기계어로 번역됨<br/>
+**단점** : `Native`언어들에 비해 속도가 느림
+
+## DVM
+> `dex-file`을 `Dalvik Machine` 위에 올리는 방식
+
+`ByteCode` -> `interpret` -> 실행 -> `Native`코드로 변환(`JIT-compile`)<br/>
+`License` 문제로 `JVM` 대신 `Java`코드를 이용할 수 있게 개발됨
+
+**장점** : `OS`에 구애받지 않고, 해당 `OS`에 맞는 기계어로 번역됨<br/>
+**단점** : 성능과 배터리에 안좋음, `JIT-compile`된 코드가 메모리에 올라가 메모리 사용량이 높음
+
+## ART
+> `Machine` 위에서 `OAT-file`을 돌리는 방식<br/>`VM`이 아닌 `runtime`시 사용됨
+
+앱을 설치할 때 완전히 `native`코드로 변환되어 설치됨(`AOT-compile`)
+
+**장점** : 코드 `interpret` 및 `JIT-compile`을 제거하여 성능이 향상됨<br/>
+**단점** : 설치시점에 코드를 번역하여 설치가 느리고, 파일을 따로 저장하기 때문에 용량이 커짐
 
 ## `Android`는 `JVM`/`DVM`/`ART` 중 어느것인지 설명하시오
+### Android 4.4 (`KitKat`) 이전
+`DVM` 사용
+
+### Android 4.4 (`KitKat`) 이후
+`DVM`에서 `ART`로 컴파일 방식을 바꾸기 시작함
+
+> `Dalvik`에서 돌아가는 앱들이 `ART`에서 죽는 현상이 발생함
+
+### Android 5.0 (`Lolipop`) 이후
+`ART`가 기본 `runtime`이 됨
+
+### Android 7.0 (`Nougat`) 이후
+`AOT-compile` 방식과 `JIT-compile` 방식을 조합해서 사용하기 시작함
+
+### Android 8.0 (`Oreo`) 이후
+`ART-compile` 방식의 많은 개선이 이뤄져 많은 문제들  해결
 
 # `ListView` vs `RecyclerView`
 
