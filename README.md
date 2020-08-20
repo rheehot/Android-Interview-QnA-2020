@@ -233,7 +233,7 @@
 
 > 기본적으로 `Object`를 상속받으면 `Reference Type`이 됨<br/>
 > 또한 선언한 자료형이 `Primitive Type`이 아니면 `Reference Type`이 됨
-
+`
 # `String` vs `StringBuilder` vs `StringBuffer`
 ## String
 기본적으로 `immutable`(`불변`)이다.<br/>
@@ -426,10 +426,31 @@ https://test.com/test.pdf?index=15
 # `Process`에 대하여 설명하시오
 > goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4)
 
+**실행중에 있는** 프로그램<br/>
+프로그램을 실행하면, 실행하기 위해서 `메모리 할당`이 이루어지고, 할당된 메모리 공긴으로 바이너리 코드가 올라간다. **이 순간부터 `process`라고 불린다.**
+
+## `Process`의 메모리 구조
+1. `Code 영역` : 프로그램을 실행시키는 소스코드들이 올라간다.<br/>
+2. `Data 영역` : `전역변수`, `static` 변수들이 할당된다.<br/>
+3. `Heap 영역` : `동적할당`을 위한 메모리 영역이다.<br/>
+4. `Stack 영역` : `지역변수`와 `인자`들을 위한 메모리 영역이다.<br/>
+
+## `Process Scheduling`
+`Process`의 `CPU` 할당 순서 및 방법을 결정하는 일
+
 # `Thread`에 대하여 설명하시오
 > goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#%EC%8A%A4%EB%A0%88%EB%93%9C)
 
+`Process` 내부의 작업 단위
+
+## 특징
+1. `Thread`는 한 `process`에서 **최소 하나 이상 존재한다.**<br/>
+2. `Multi-Thread`에서 각 `thread`끼리는 서로 `process`의 **메모리 영역을 공유한다.**
+
+> `Thread`가 하나의 `process`안에서 여러개가 존재하는걸 `Multi-Thread`라고 한다.
+
 ## `Thread Pool`에 대하여 설명하시오
+`Thread`를 **미리 만들어놓는것**
 
 # `Handler`에 대하여 설명하시오
 
@@ -483,6 +504,8 @@ https://test.com/test.pdf?index=15
 # `Callable`과 `Runnable`의 차이점을 설명하시오
 
 # `Interceptor`에 대하여 설명하시오
+
+# `GC`(`Garbage Collection`)에 대해 설명하시오
 -----
 
 # `Issue`를 통한 오타/오류/내용 추가 지적 환영합니다 :)
