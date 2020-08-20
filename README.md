@@ -455,7 +455,16 @@ https://test.com/test.pdf?index=15
 # `Handler`에 대하여 설명하시오
 서로 다른 `thread`간의 통신을 위한 장치
 
-# `Looper`에 대하여 설명하시오
+## `Looper`에 대하여 설명하시오
+`MessageQueue`로부터 `message`를 꺼내와서 해당 `message`와 연결된 `handler`를 호출하는 역할을 함
+
+## `MessageQueue`에 대하여 설명하시오
+`Message`를 `Queue` 형태로 저장하여 관리하는 객체이다.<br/>
+> `FIFO`(`First In First Out`) 방식으로 동작하기 때문에, `message`는 `queue`에 들어온 순서에 따라 차례대로 저장됨
+> 그리고 가장 먼저 들어온 `message` 객체부터 차례대로 처리됨
+
+## `Message`에 대하여 설명하시오
+`Thread`로 전달할 데이터를 한 곳에 저장할 객체이다.
 
 # `Wrapper`에 대하여 설명하시오
 
