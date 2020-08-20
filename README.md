@@ -508,7 +508,7 @@ https://test.com/test.pdf?index=15
 
 # `GC`(`Garbage Collection`)에 대해 설명하시오
 
-#  `GC`의 종류에 대해서 설명하시오
+## `GC`의 종류에 대해서 설명하시오
 
 -----
 
