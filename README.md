@@ -233,7 +233,7 @@
 
 > 기본적으로 `Object`를 상속받으면 `Reference Type`이 됨<br/>
 > 또한 선언한 자료형이 `Primitive Type`이 아니면 `Reference Type`이 됨
-`
+
 # `String` vs `StringBuilder` vs `StringBuffer`
 ## String
 기본적으로 `immutable`(`불변`)이다.<br/>
@@ -467,6 +467,9 @@ https://test.com/test.pdf?index=15
 `Thread`로 전달할 데이터를 한 곳에 저장할 객체이다.
 
 # `Wrapper`에 대하여 설명하시오
+> 필요한 데이터를 받거나 쓰기 위해 데이터 형태를 설정해 주는 역할을 함
+
+`Primitive Type`에 대한 클래스 표현이라고 할 수 있다.
 
 # `Thread`간 통신 방법에 대하여 설명하시오
 
