@@ -403,7 +403,22 @@
 ## RESTful이란?
 `REST` 원리를 따르는 시스템
 
+# 2020.08.19. ~ 2020.08.20.
 # `URI`와 `URL`의 차이점에 대하여 설명하시오
+## URI (`Uniform Resource Indetifier`)
+전체 주소
+> EX) `https://test.com/test.pdf?index=5`
+
+## URL (`Uniform Resource Locator`)
+파일의 위치(구분자)를 표시하는 주소
+> EX) `https://test.com/test.pdf`?index=5  
+
+```
+https://test.com/test.pdf?index=5
+https://test.com/test.pdf?index=15
+```
+위와 같은 주소는 같은 `URL`을 가지지만 `URI`는 서로 다름<br/>
+> `URL`은 `URI` 안에 있음
 
 # `Process`에 대하여 설명하시오
 
