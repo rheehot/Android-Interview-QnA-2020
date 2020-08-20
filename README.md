@@ -460,7 +460,7 @@ https://test.com/test.pdf?index=15
 
 ## `MessageQueue`에 대하여 설명하시오
 `Message`를 `Queue` 형태로 저장하여 관리하는 객체이다.<br/>
-> `FIFO`(`First In First Out`) 방식으로 동작하기 때문에, `message`는 `queue`에 들어온 순서에 따라 차례대로 저장됨
+> `FIFO`(`First In First Out`) 방식으로 동작하기 때문에, `message`는 `queue`에 들어온 순서에 따라 차례대로 저장됨<br/>
 > 그리고 가장 먼저 들어온 `message` 객체부터 차례대로 처리됨
 
 ## `Message`에 대하여 설명하시오
