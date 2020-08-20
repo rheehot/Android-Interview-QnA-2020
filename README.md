@@ -506,6 +506,9 @@ https://test.com/test.pdf?index=15
 # `Interceptor`에 대하여 설명하시오
 
 # `GC`(`Garbage Collection`)에 대해 설명하시오
+
+#  `GC`의 종류에 대해서 설명하시오
+
 -----
 
 # `Issue`를 통한 오타/오류/내용 추가 지적 환영합니다 :)
