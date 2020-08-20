@@ -304,6 +304,9 @@
 **장점** : `OS`에 구애받지 않고, 해당 `OS`에 맞는 기계어로 번역됨<br/>
 **단점** : `Native`언어들에 비해 속도가 느림
 
+### `JVM`의 작동 방식에 대하여 설명하시오
+
+
 ## DVM
 > `dex-file`을 `Dalvik Machine` 위에 올리는 방식
 
@@ -421,8 +424,10 @@ https://test.com/test.pdf?index=15
 > `URL`은 `URI` 안에 있음
 
 # `Process`에 대하여 설명하시오
+> goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4)
 
 # `Thread`에 대하여 설명하시오
+> goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#%EC%8A%A4%EB%A0%88%EB%93%9C)
 
 ## `Thread Pool`에 대하여 설명하시오
 
