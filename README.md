@@ -472,6 +472,7 @@ https://test.com/test.pdf?index=15
 `Primitive Type`에 대한 클래스 표현이라고 할 수 있다.
 
 # `Thread`간 통신 방법에 대하여 설명하시오
+> goto [Handler](https://github.com/sungbin5304/Android-Interview-QnA-2020#handler%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4)
 
 # 안드로이드의 `메모리 관리`에 대하여 설명하시오
 
