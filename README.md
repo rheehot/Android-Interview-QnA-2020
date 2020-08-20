@@ -475,6 +475,7 @@ https://test.com/test.pdf?index=15
 > goto [Handler](https://github.com/sungbin5304/Android-Interview-QnA-2020#handler%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4)
 
 # `Activity`간 통신에 대하여 설명하시오
+[`Singleton`](https://github.com/sungbin5304/Programming-Study#%EC%8B%B1%EA%B8%80%ED%86%A4)을 이용하거나 `intent`를 사용한다.
 
 # `FCM`의 원리에 대하여 설명하시오
 
