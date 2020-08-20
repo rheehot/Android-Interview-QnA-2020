@@ -453,6 +453,7 @@ https://test.com/test.pdf?index=15
 `Thread`를 **미리 만들어놓는것**
 
 # `Handler`에 대하여 설명하시오
+서로 다른 `thread`간의 통신을 위한 장치
 
 # `Looper`에 대하여 설명하시오
 
