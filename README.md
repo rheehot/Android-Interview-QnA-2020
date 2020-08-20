@@ -374,7 +374,7 @@
 자원의 `이름`으로 구분하여 해당 `정보`를 주고 받는 모든 것<br/>
 **웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일**
 
-#### `CRUD` Operation
+## `CRUD` Operation
 `Create` : 생성 (`POST`)<br/>
 `Read` : 조회 (`GET`)<br/>
 `Update` : 수정 (`PUT`)<br/>
