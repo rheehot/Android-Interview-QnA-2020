@@ -2,13 +2,8 @@
 2021~ 안드로이드 취직 대비 면접 예상 질문들 모음집<br/><br/>
 *끝에 2020는 그냥 단순히 2020년에 작성되었음을 뜻하기 위해서다*<br/><br/>
 
-> ~~목표: 1일1커밋 (하루도 못가서 실패)~~
-
-> 목표 : 1일1커밋 (2020.08.15. 재시작, *주말 예외*)
-
 -----
 
-# 2020.08.15.
 # 안드로이드 `Life-Cycle`에 대하여 설명하시오
 > goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0)
 
@@ -179,7 +174,6 @@
 |`application`|모든 종류의 데이터|`application/xml`<br/>`application/pdf`|
 > 더 많은 정보) [[방문]](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
-# 2020.08.17.
 # `Pending Intent`에 대하여 설명하시오
 다른 `Process`(`Application`)에서 권한을 허가하여 가지고 있는 `Intent`를 본인 `Process`에서 실행하는 것 처럼 해주는 것
 
@@ -296,7 +290,6 @@
 # `Inflate`에 대해 설명하시오
 `XML`에 정의되있는 `View`를 실제 `View` 객체로 만드는 역할을 수행한다.
 
-# 2020.08.18.
 # `JVM`/`DVM`/`ART`에 대해 설명하시오
 ## JVM
 > `ByteCode` -> `interpret` -> 각 `OS`에 맞는 기계어로 번역 -> 실행
@@ -406,7 +399,6 @@
 ## RESTful이란?
 `REST` 원리를 따르는 시스템
 
-# 2020.08.19. ~ 2020.08.20.
 # `URI`와 `URL`의 차이점에 대하여 설명하시오
 ## URI (`Uniform Resource Indetifier`)
 전체 주소
