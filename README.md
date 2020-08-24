@@ -512,6 +512,8 @@ https://test.com/test.pdf?index=15
 
 ## `GC`의 종류에 대해서 설명하시오
 
+# `mipmap`과 `drawable`의 차이점을 
+
 -----
 
 # `Issue`를 통한 오타/오류/내용 추가 지적 환영합니다 :)
