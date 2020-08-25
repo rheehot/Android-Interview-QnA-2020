@@ -9,10 +9,6 @@
 
 사용자가 앱을 `탐색하고`, `나가고`, `다시 들어올 때` 등등의 **상태 변화**에 따라서 이를 앱에서 알아차릴 수 있게 제공하는 `Callback`.
 
-## ~~Application~~
-> 분명 어디선가 `Application`도 `Life-Cycle`가 있다고 봤는데, 찾아보니깐 정보가 없다.<br/>
-> ~~일단 보류~~
-
 ## Activity
 1. `onCreate` : `Activity`가 생성될 때 호출되며 사용자 `interface` 초기화에 사용됨
 > **만약 A - > B 갔다가 다시 B -> A 로 이전 `stack`으로 돌아오는 `activity`일 경우, `onCreate` 대신 `onRestart`가 호출됨**
@@ -487,9 +483,20 @@ https://test.com/test.pdf?index=15
 # `Context`에 대하여 설명하시오
 > goto [Programming-Study](https://github.com/sungbin5304/Programming-Study#context)
 
+새로 생성된 `객체`에서 지금 어떤 일이 일어나고 있는지 알 수 있게 해줌<br/>
+또한 `resource`, `database`, `preferences` 등에 접근을 제공해줌<br/>
+
+**`Context`는 기본적으로 `gc`에 의해 수집되지 않음**
+
 ## `Application Context`
+**`Singleton Instance`** 이며, `application life-cycle`과 연결되어 있음<br/>
+
+현재의 `context`와 분리된 `life-cycle`을 가진 `context`나, **`activity`의 범위를 넘어서 `context`를 전달할 때 사용함**<br/>
 
 ## `Activity Context`
+`Activity`에서 사용가능하며, `activity life-cycle`과 연결되어 있음<br/>
+
+`Activity` 범위 내에서 `context`를 전달하거나 `lifecycle`이 현재의` context`에 붙은 `context`가 필요할 때 사용함<br/>
 
 # `Build Process`에 대하여 설명하시오
 
