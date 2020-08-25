@@ -498,6 +498,21 @@ https://test.com/test.pdf?index=15
 
 `Activity` 범위 내에서 `context`를 전달하거나 `lifecycle`이 현재의 `context`에 붙은 `context`가 필요할 때 사용함<br/>
 
+### `Context` 얻는 방법들
+
+#### View.getContext()
+`activity context`를 반환한다.
+
+### this
+`View.getContext()`와 같은 역할을 한다.
+
+#### Activity.getApplicationContext()
+`application context`를 반환한다.
+
+#### ContextWrapper.getBaseContext()
+자신의 `context`가 아닌 다른 `context`에 접근할 때 사용된다.<br/>
+`Context`를 생성할 때 만들어지는 `context`들의 기본 `context`를 반환한다.
+
 # `Build Process`에 대하여 설명하시오
 
 # `Build Type`에 대하여 설명하시오
